@@ -2,12 +2,15 @@ import React from 'react';
 import ListItems from './ListItems';
 
  const List = ({listx}) =>{
+  
   return(
-    // code here
-    
-      <ListItems  />
-    
-    
+    <>
+      {
+        listx.map((element) => {
+         return <ListItems valuex={element} />
+        })
+      }
+    </>
   )
 }
 

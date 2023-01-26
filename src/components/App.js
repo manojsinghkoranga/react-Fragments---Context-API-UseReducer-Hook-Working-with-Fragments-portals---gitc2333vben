@@ -10,12 +10,11 @@ const App = () => {
 
 
   const onButtonClick = () => {
-    setList([])
-    for (let i = 1; i < Number(value)+1; i++) {
-      
-      setList((prev) => [...prev, i]);
+    const newArray = [];
+    for(let i=1; i<=value; i++){
+      newArray.push(i);
     }
-   
+   setList(newArray);
   };
  
 
